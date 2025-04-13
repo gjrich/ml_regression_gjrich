@@ -1,12 +1,23 @@
 # ml_regression_gjrich
 
-# Auto MPG Regression Analysis
+Gabriel Richards / April 2025
+
+## Auto MPG Regression Analysis
 
 This project explores, analyzes, and builds predictive models for fuel efficiency (MPG) using the classic Auto MPG dataset from UCI.
+
+View my notebook for yourself here!
+https://github.com/gjrich/ml_regression_gjrich/blob/master/regression_gjrich.ipynb
 
 ## Overview
 
 In this project, I apply various regression modeling techniques to predict automobile fuel efficiency based on the features vehicle weight, model year, and car make. The analysis demonstrates how different regression approaches can improve prediction accuracy and reveals interesting patterns in automotive fuel efficiency.
+
+As part of ths project, I also reviewed Philip Fowler's Notebook. My review is available here:
+https://github.com/gjrich/ml_regression_gjrich/blob/master/PeerReview.md
+
+His repository is available here:
+https://github.com/drpafowler/ml-final/blob/main/regression_fowler.ipynb
 
 ## Dataset
 

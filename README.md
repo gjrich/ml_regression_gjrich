@@ -42,17 +42,20 @@ These features were used due to their their ability to represent the traits of v
 
 ## Models and Techniques
 
-Three different regression approaches were implemented and compared:
+Four different regression approaches were implemented and compared:
 
 1. **Baseline Linear Regression** - A simple multivariate linear regression model
-2. **Pipeline with StandardScaler** - Linear regression with standardized features
-3. **Polynomial Regression** - Testing various polynomial degrees (3, 4, 6, 9)
+2. **Pipeline 1: Imputer → StandardScaler → Linear Regression**
+3. **Pipeline 2: Imputer → Polynomial Features (degree=3) → StandardScaler → Linear Regression**
+4. **Polynomial Regression** - As a bonus, tested various polynomial degrees (3, 4, 6, 9)
 
 The project also included an in-depth test-train split evaluation - I took special attention in preserving the distribution of the target variable in both sets.
 
 ## Key Findings
 
 - The polynomial regression model (degree 4) achieved the best performance with an R² score of 0.90 on the test set
+  - Optimizing the polynomial degree was able to outperform all the other models, even the more complex Pipeline 1 and Pipeline 2
+  - This is even though the polynomial optimization efforts removed the 'make' feature to avoid the categorical variable causing dimensionality problems
 - Vehicle weight showed the strongest negative correlation with MPG
 - Model year held a positive correlation with MPG, reflecting improvements in fuel efficiency over time
 - Asian car manufacturers produced more fuel-efficient vehicles

@@ -21,12 +21,12 @@ The dataset used is the UCI Auto MPG dataset which contains fuel consumption inf
 
 ## Features Explored
 
-After careful analysis, the main features used for modeling include:
+After detailed review of correlation, the main features used for modeling include:
 - Weight
 - Model year
 - Car make (extracted from car name)
 
-These features were chosen due to their strong correlation with MPG and their ability to represent important characteristics of vehicles that influence fuel efficiency.
+These features were chosen due to their their ability to represent the traits of vehicles that influence fuel efficiency.
 
 ## Models and Techniques
 
@@ -36,7 +36,7 @@ Three different regression approaches were implemented and compared:
 2. **Pipeline with StandardScaler** - Linear regression with standardized features
 3. **Polynomial Regression** - Testing various polynomial degrees (3, 4, 6, 9)
 
-The project includes careful test-train split evaluation, with special attention to preserving the distribution of the target variable in both sets.
+The project also included an in-depth test-train split evaluation, with special attention to preserving the distribution of the target variable in both sets.
 
 ## Key Findings
 

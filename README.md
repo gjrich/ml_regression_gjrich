@@ -4,24 +4,25 @@ Gabriel Richards / April 2025
 
 ## Auto MPG Regression Analysis
 
-This project explores, analyzes, and builds predictive models for fuel efficiency (MPG) using the classic Auto MPG dataset from UCI.
+This project explores and builds predictive models for fuel efficiency (MPG) using the classic Auto MPG dataset from UCI.
 
 View my notebook for yourself here!
 https://github.com/gjrich/ml_regression_gjrich/blob/master/regression_gjrich.ipynb
 
 ## Overview
 
-In this project, I apply various regression modeling techniques to predict automobile fuel efficiency based on the features vehicle weight, model year, and car make. The analysis demonstrates how different regression approaches can improve prediction accuracy and reveals interesting patterns in automotive fuel efficiency.
+In this project, I apply regression modeling techniques to predict automobile fuel efficiency based on the features vehicle weight, model year, and car make. The analysis demonstrates how different regression approaches can improve prediction accuracy and reveals interesting patterns in automotive fuel efficiency.
 
 As part of ths project, I also reviewed Philip Fowler's Notebook. My review is available here:
 https://github.com/gjrich/ml_regression_gjrich/blob/master/PeerReview.md
 
-His repository is available here:
+His notebook and repository are available here:
 https://github.com/drpafowler/ml-final/blob/main/regression_fowler.ipynb
+
 
 ## Dataset
 
-The dataset used is the UCI Auto MPG dataset which contains fuel consumption information in miles per gallon (MPG) along with various attributes of automobiles from the late 1970s and early 1980s. The dataset includes:
+The dataset used is the UCI Auto MPG dataset which contains fuel consumption data for various vehicles measured in miles per gallon (MPG), along with  other attributes of those automobiles. The vehicles are from the late 1970s and early 1980s. The dataset includes:
 
 - MPG (miles per gallon) - our target variable
 - Cylinders, displacement, horsepower, weight
@@ -32,12 +33,12 @@ The dataset used is the UCI Auto MPG dataset which contains fuel consumption inf
 
 ## Features Explored
 
-After detailed review of correlation, the main features used for modeling include:
+After review of correlation, the main features chosen for modeling were:
 - Weight
 - Model year
 - Car make (extracted from car name)
 
-These features were chosen due to their their ability to represent the traits of vehicles that influence fuel efficiency.
+These features were used due to their their ability to represent the traits of vehicles that influence fuel efficiency.
 
 ## Models and Techniques
 
@@ -47,14 +48,14 @@ Three different regression approaches were implemented and compared:
 2. **Pipeline with StandardScaler** - Linear regression with standardized features
 3. **Polynomial Regression** - Testing various polynomial degrees (3, 4, 6, 9)
 
-The project also included an in-depth test-train split evaluation, with special attention to preserving the distribution of the target variable in both sets.
+The project also included an in-depth test-train split evaluation - I took special attention in preserving the distribution of the target variable in both sets.
 
 ## Key Findings
 
-- The polynomial regression model (degree 3) achieved the best performance with an R² score of 0.885 on the test set
+- The polynomial regression model (degree 4) achieved the best performance with an R² score of 0.90 on the test set
 - Vehicle weight showed the strongest negative correlation with MPG
-- Model year demonstrated a positive correlation with MPG, reflecting improvements in fuel efficiency over time
-- Asian car manufacturers generally produced more fuel-efficient vehicles compared to American and European manufacturers
+- Model year held a positive correlation with MPG, reflecting improvements in fuel efficiency over time
+- Asian car manufacturers produced more fuel-efficient vehicles
 
 ## Files in this Repository
 
